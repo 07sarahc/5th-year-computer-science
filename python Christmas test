@@ -1,0 +1,50 @@
+# # Question 16(a) 
+# # name: Sarah Culhane 
+# 
+print("The program")
+
+age = int(input("What age are you? "))
+
+if (age >= 17):
+print("You are entitled to apply for a driving licence.")
+
+#(i)
+print("welcome to the driving license eligibility checker")
+age= int(input("what age are you? ")) #(iii) in this code on line six there is a variable for what u want to name it as and because its an interger we use int because we will be working with a number we are working with.
+
+#(iii)
+print("welcome to the driving license eligibility checker")
+age= int(input("what age are you? "))
+if (age >=17):
+    print("you are entitled to apply for a driving license")
+    
+#(iv)
+print("welcome to the driving license eligibility checker")
+age= int(input("what age are you? "))
+if (age <=17):
+#     print("you are not entitled to apply for a driving license")
+
+#(v)
+print("welcome to the driving license eligibility checker")
+print=input("what is your name? ")
+print=int(input("what age are you? "))
+if (age <=17):
+    print("you are not entitled to apply for a driving license")
+    
+#(vi)
+print("welcome to the driving license eligibility checker")
+print=input("what is your name? ")
+print=int(input("what age are you? "))
+if (age <= 17):
+    print("sarah you are not entitled to apply for a driving license")
+elif (age <=17 and >=74):
+    print("sarah you are entitled to apply for a driving license")
+if (age >17):
+    print("sarah you are entitled to apply for a three year driving licence")
+    
+#(b)
+print("spit bill calculator")
+print=int(input("enter the total amount of the bill: "))
+print=int(input("enter the total amount of people who will be splitting the bill: "))
+  
+
