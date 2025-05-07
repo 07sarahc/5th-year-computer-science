@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ALT3 – Rumour Spread Simulation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7fa);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #ff6f91, #ff9671);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      padding: 2em;
+      margin: 0 auto;
+      max-width: 900px;
+      background-color: #ffffffdd;
+      border-radius: 16px;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #ff4081;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8em;
+      border-bottom: 2px dashed #ff80ab;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+    }
+    .highlight {
+      background-color: #ffecf1;
+      padding: 1em;
+      border-left: 6px solid #ff4081;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      color: #880e4f;
+    }
+    ul, ol {
+      padding-left: 1.5em;
+    }
+    ul li, ol li {
+      margin: 0.5em 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .graph-placeholder {
+      background: repeating-linear-gradient(45deg, #fff3f8, #fff3f8 10px, #ffdce6 10px, #ffdce6 20px);
+      border: 3px dashed #e91e63;
+      padding: 3em;
+      text-align: center;
+      color: #c2185b;
+      font-style: italic;
+      margin-top: 2em;
+      border-radius: 12px;
+    }
+    footer {
+      background: linear-gradient(90deg, #ff6f91, #ff9671);
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    ALT3 – Modelling and Simulation :
+    
+    <br>
+    <p/>Spreading Rumours in School Using Agent-Based Modelling.<p/>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <div class="highlight">
+      in computer science, <u> modelling </u> is when we make a simple version of a real-world thing, like a system, situation, or process. This simple version is called a model. A model helps us understand, test, and play around with something complicated by focusing only on the most important parts.
+      
+      
+<p/> A <u>simulation </u> is when we run that model on a computer to see what happens over time. It shows us how the model behaves and helps us answer questions like: "What if this happened instead?" or "How will this change affect the result?"<p/>
+ <strong></strong> 
+    </div>
+    <p>
+     
+    </p>In this project, I created a model that shows how rumours spread in a school. This is a real-life situation that many students have seen. I used a type of simulation called agent-based modelling, which means every student is an agent who makes their own decisions and acts independently. They can talk to each other, and if one of them knows a rumour, they might pass it on.
+  </section>
+
+  <section>
+    <h2>What are Agents and Emergent Behaviour?</h2>
+   <div class="highlight">
+   	An agent is a person or thing in the simulation that follows simple rules.
+
+    <u> In this project, each student is an agent.</u>
+   <strong></strong> 
+    </div>
+    <p>
+     
+     <p/> •	A student either knows the rumour or doesn’t. </p>
+<p/> •	Students randomly talk to other students.<p/>
+<p/>•	If a student knows the rumour, they might share it with the other student.<p/>
+<p/>•	When lots of agents follow simple rules, something big can happen. This is called emergent behaviour.<p/>
+
+<div class="colour-box">
+
+  <p>For example, a few students know the rumour. They tell others, who then tell more. In a short time, the whole school might know the rumour. That’s emergent behaviour: a big result from small actions. <p/>
+  
+</div>
+
+    <div class="highlight">
+      <strong>Emergent Behaviour:</strong> When many agents follow simple rules, something big can happen. For example, a small rumour can spread through the whole school!
+    </div>
+  </section>
+
+  <section>
+    <h2>Response to Brief</h2>
+    <p>I chose to simulate the <strong>spread of rumours in school</strong> because it’s something many students can relate to. I wanted to learn how fast rumours can spread, and what changes the speed. I expect to find out that a rumour can spread very quickly, even if it starts with just one person. I also want to see what happens if fewer people share it, or if only a few people hear it at the beginning.</p>
+<a href="https://ibb.co/B54xn2Dd"><img src="https://i.ibb.co/TxKSWMXp/IMG-4769.jpg" alt="IMG-4769" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>Mindmap ⬆️ </a><br />
+    <h2>Design and Pseudocode</h2>
+    <ol>
+      <p>
+I created a list of students (agents). Some of them were randomly picked to start with the rumour. Then, for a number of steps (like time passing), students talked to others and spread the rumour. I started by roughly drafting a pseudocode to help make the flowchart easier.</p>
+      <li>    Choose a few to start with the rumour</li>
+      <li>	Create a list of students (True = knows rumour, False = doesn’t)
+<li>   	Choose a few students to start with the rumour</li>
+<li>	For each student who knows the rumour :</li>
+<li>	Talk to a few random students</li>
+<li>	If the other student doesn’t know it:</li>
+<li>	Use random chance to see if they learn it</li>
+<li>	Count how many students know the rumour</li>
+<li>	Plot the results on a graph</li>
+
+    </ol>
+ 
+<a href="https://ibb.co/kVp3WRMB"><img src="https://i.ibb.co/BHm4SXw3/IMG-0773.jpg" alt="IMG-0773" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'><br />
+<a href="https://ibb.co/dJHNZD99"><img src="https://i.ibb.co/jZjCtDKK/IMG-0774.jpg" alt="IMG-0774" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>Flowchart ⬆️ </a><br />
+  <section>
+    <h2>Research</h2>
+    <p>Agent-based modelling is very helpful when we want to understand how things spread or grow in a group.  we tell each agent (student) what to do. Then we let them act on their own. From their actions, we can see how the whole group behaves.</p>
+<strong>This kind of modelling is used for:</strong>
+<li>	Spreading diseases</li>
+<li>	Sharing information</li>
+<li>	Moving through a crowd</li>
+<p>
+<strong>Emergent behaviour</strong> ( When many agents follow simple rules, something big can happen) <strong>for example :</strong><p>
+<p> 1.   	one person tells two others</p>
+<p>	2.      Those two tell four more </p>
+<p>3.       Then eight, sixteen, and so on</p>
+<p>4.      Very quickly, a simple rumour can reach the whole school. Nobody planned it, but it still happened. 
+
+<p>That’s why agent-based modelling is perfect for this simulation!!<p>
+
+</p>
+  </section>
+
+  <section>
+    <h2>Code</h2>
+    <p> My code uses random numbers to make the simulation realistic. Each student has a chance to talk to others and share the rumour. I use a list of students and loop through them.
+The program runs for 10 time steps, and at each step, it checks who spreads the rumour.<p>
+<a href="https://ibb.co/mCK0dR16"><img src="https://i.ibb.co/zhgFCmjG/IMG-0599.jpg" alt="IMG-0599" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>Code ⬆️ </a><br />
+</p>
+  </section>
+
+  <section>
+    <h2>Analysis of Inputs & Predictions</h2>
+    <ul>
+      <li>Higher chance to share = faster spreading</li>
+      <li>More starters = wider spread</li>
+      <li>More conversations = quicker spread</li>
+      <li>Bigger school = takes longer to reach everyone</li>
+    </ul>
+    <p>This shows how small changes can make a big difference!</p>
+  </section>
+
+  <section>
+    <section>
+    <h2>Graph</h2>
+    <ul>
+      <a href="https://ibb.co/5gMr46cZ"><img src="https://i.ibb.co/5gMr46cZ/IMG-0592.jpg" alt="IMG-0592" border="0"></a>
+    </div>
+  </section>
+
+  <footer>
+    Created for ALT3 - Computer Science Project 2025
+  </footer>
+</body>
+</html>
+
+
