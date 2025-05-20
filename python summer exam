@@ -1,1 +1,93 @@
+#question 1
+# # #(i)
+value_small_containers=0.15
+number_small_containers=int(input("please enter how many small containers you are returning: "))
+total_value=value_small_containers * number_small_containers
+print("the total value of your small containers was:", total_value)
+
+#(ii)
+
+value_large_containers=0.25
+large_containers=int(input("please enter how many large containers you are returning: "))
+total_value_large=value_large_containers * large_containers
+print("the total value of your large containers was: ", total_value_large)
+
+#(iii)
+value_large_containers=0.25
+large_containers=int(input("please enter how many large containers you are returning: "))
+total_value_large=value_large_containers * large_containers
+print("the total value of your large containers was: ", total_value_large)
+total_value=value_small_containers * number_small_containers
+print("the total value of your small containers was:", total_value)
+
+
+total_value_large=value_large_containers * large_containers
+print("the total value of your large containers was: ", total_value_large)
+
+grand_total=total_value_large + total_value
+print("your grand total was: ", grand_total)
+
+#(iv)
+value_small_containers=0.15
+number_small_containers=int(input("please enter how many small containers you are returning: "))
+total_value=value_small_containers * number_small_containers
+print("the total value of your small containers was:", total_value)
+
+value_large_containers=0.25
+large_containers=int(input("please enter how many large containers you are returning: "))
+total_value_large=value_large_containers * large_containers
+print("the total value of your large containers was: ", total_value_large)
+
+grand_total=total_value_large + total_value
+print("your grand total was: ", grand_total)
+
+shopping_bill=float(input("please enter your shopping bill: "))
+deduction=shopping_bill - grand_total
+print("your shopping bill with the deposit return is: ", deduction)
+
+#question 2
+#(i)
+import random
+print("welcome to my shop")
+total = 0
+item_list=[]
+item_prices=[]
+name_item=input("please enter the item: ")
+price_item1=float(input("please enter the price of the item: "))
+print("the current total is: ",price_item1)
+name_item=input("please enter the item: ")
+price_item2=float(input("please enter the price of the item: "))
+total=price_item1 + price_item2
+print("the current total is:",total)
+name_item=input("please enter the item: ")
+price_item3=float(input("please enter the price of the item: "))
+total3=total + price_item3
+print("the current total is:",total3)
+name_item=input("please enter the item: ")
+price_item4=float(input("please enter the price of the item: "))
+total4=total3 + price_item4
+print("the current total is:",total4)
+stop="stop"
+print("please enter the item:", stop) 
+list=['apple','pear','orange','kiwi']
+print("your items are: ",list)
+prices=[1.5,1.3,2.0,0.9]
+print("your prices are: ",prices)
+grand_total=total+total3+total4
+print("your grand tota;",grand_total)
+
+#(ii)
+fruit="apple"
+print("your random item to be checked is:",fruit)
+
+#(iii)
+fruit2="kiwi"
+print("your random item to be checked is: ",fruit2)
+expensive="orange"
+print("the most expensive item is: ",expensive)
+cheapest="kiwi"
+print("the cheapest item is: ",cheapest)
+
+
+
 
